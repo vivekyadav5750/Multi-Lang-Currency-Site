@@ -1,0 +1,22 @@
+{
+    "navbar": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "contact": "Contacto",
+      "products": "Productos"
+    },
+    "banner": {
+      "title": "Bienvenido a Multi-Lang CMS",
+      "subtitle": "Experimenta una gestión de contenido fluida con soporte multilingüe."
+    },
+    "product": {
+      "name": "Nombre del producto",
+      "description": "Este es un gran producto con características increíbles.",
+      "price": "Precio"
+    },
+    "company": {
+      "about": "Somos una empresa global que ofrece productos de alta calidad en todo el mundo.",
+      "contact": "Contáctanos para más información."
+    }
+  }
+  
