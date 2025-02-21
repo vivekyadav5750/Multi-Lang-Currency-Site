@@ -1,0 +1,40 @@
+{
+    "product": {
+      "name": "프리미엄 헤드폰",
+      "description": "프리미엄 헤드폰으로 최고의 사운드 품질을 경험하세요.",
+      "price": "가격",
+      "inventory": "재고",
+      "outOfStock": "품절",
+      "recommendedTitle": "추천 제품",
+      "recommended": [
+        {
+          "name": "무선 이어버드",
+          "description": "소음 제거 기능이 있는 컴팩트하고 강력한 이어버드."
+        },
+        {
+          "name": "블루투스 스피커",
+          "description": "깊은 베이스와 긴 배터리 수명을 갖춘 휴대용 스피커."
+        },
+        {
+          "name": "게이밍 헤드셋",
+          "description": "선명한 오디오로 몰입감 있는 게임 경험을 위한 디자인."
+        }
+      ]
+    },
+    "about": {
+      "title": "회사 소개",
+      "history": "우리는 1990년부터 혁신의 글로벌 리더입니다."
+    },
+    "contact": {
+      "phone": "+82 123-456-7890",
+      "address": "123 메인 스트리트, 서울, 대한민국"
+    },
+    "banner": {
+      "title": "한정 기간 할인!",
+      "subtitle": "이번 주 모든 제품 20% 할인 혜택을 누리세요."
+    },
+    "datetime": {
+      "format": "YYYY.MM.DD"
+    }
+  }
+  

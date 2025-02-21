@@ -24,6 +24,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "middleware.ts" // ✅ Added this line to include middleware.ts
-  ],
+, "note.tst"  ],
   "exclude": ["node_modules"]
 }

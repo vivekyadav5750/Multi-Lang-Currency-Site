@@ -1,0 +1,5 @@
+for language
+1. make json
+2. check middleware
+3. check layout
+4. check request.ts

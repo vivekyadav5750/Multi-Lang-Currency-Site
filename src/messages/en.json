@@ -1,6 +1,39 @@
 {
-  "home": {
-    "title": "Welcome to Our Website",
-    "description": "This is a multi-language and multi-currency CMS built with Next.js."
+  "product": {
+    "name": "Premium Headphones",
+    "description": "Experience superior sound quality with our premium headphones.",
+    "price": "Price",
+    "inventory": "Inventory",
+    "outOfStock": "Out of Stock",
+    "recommendedTitle": "Recommended Products",
+    "recommended": [
+      {
+        "name": "Wireless Earbuds",
+        "description": "Compact and powerful with noise cancellation."
+      },
+      {
+        "name": "Bluetooth Speaker",
+        "description": "Portable speaker with deep bass and long battery life."
+      },
+      {
+        "name": "Gaming Headset",
+        "description": "Designed for immersive gaming experience with clear audio."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Our Company",
+    "history": "We have been a global leader in innovation since 1990."
+  },
+  "contact": {
+    "phone": "+1 234-567-890",
+    "address": "123 Main Street, New York, USA"
+  },
+  "banner": {
+    "title": "Limited-Time Offer!",
+    "subtitle": "Get 20% off on all products this week."
+  },
+  "datetime": {
+    "format": "MM/DD/YYYY"
   }
 }

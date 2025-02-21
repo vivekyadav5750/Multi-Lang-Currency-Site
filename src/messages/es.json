@@ -1,22 +1,39 @@
 {
-    "navbar": {
-      "home": "Inicio",
-      "about": "Acerca de",
-      "contact": "Contacto",
-      "products": "Productos"
-    },
-    "banner": {
-      "title": "Bienvenido a Multi-Lang CMS",
-      "subtitle": "Experimenta una gestión de contenido fluida con soporte multilingüe."
-    },
-    "product": {
-      "name": "Nombre del producto",
-      "description": "Este es un gran producto con características increíbles.",
-      "price": "Precio"
-    },
-    "company": {
-      "about": "Somos una empresa global que ofrece productos de alta calidad en todo el mundo.",
-      "contact": "Contáctanos para más información."
-    }
+  "product": {
+    "name": "Auriculares Premium",
+    "description": "Experimenta una calidad de sonido superior con nuestros auriculares premium.",
+    "price": "Precio",
+    "inventory": "Inventario",
+    "outOfStock": "Agotado",
+    "recommendedTitle": "Productos Recomendados",
+    "recommended": [
+      {
+        "name": "Auriculares Inalámbricos",
+        "description": "Compactos y potentes con cancelación de ruido."
+      },
+      {
+        "name": "Altavoz Bluetooth",
+        "description": "Altavoz portátil con graves profundos y batería de larga duración."
+      },
+      {
+        "name": "Auriculares para Gaming",
+        "description": "Diseñados para una experiencia de juego inmersiva con audio claro."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre Nuestra Empresa",
+    "history": "Hemos sido un líder global en innovación desde 1990."
+  },
+  "contact": {
+    "phone": "+34 123-456-789",
+    "address": "Calle Mayor 123, Madrid, España"
+  },
+  "banner": {
+    "title": "¡Oferta por tiempo limitado!",
+    "subtitle": "Obtén un 20% de descuento en todos los productos esta semana."
+  },
+  "datetime": {
+    "format": "DD/MM/YYYY"
   }
-  
+}

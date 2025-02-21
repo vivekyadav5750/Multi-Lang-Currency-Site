@@ -1,0 +1,39 @@
+{
+  "product": {
+    "name": "Premium-Kopfhörer",
+    "description": "Erleben Sie überlegene Klangqualität mit unseren Premium-Kopfhörern.",
+    "price": "Preis",
+    "inventory": "Lagerbestand",
+    "outOfStock": "Nicht auf Lager",
+    "recommendedTitle": "Empfohlene Produkte",
+    "recommended": [
+      {
+        "name": "Kabellose Ohrhörer",
+        "description": "Kompakt und leistungsstark mit Geräuschunterdrückung."
+      },
+      {
+        "name": "Bluetooth-Lautsprecher",
+        "description": "Tragbarer Lautsprecher mit tiefem Bass und langer Akkulaufzeit."
+      },
+      {
+        "name": "Gaming-Headset",
+        "description": "Entwickelt für ein immersives Spielerlebnis mit klarem Sound."
+      }
+    ]
+  },
+  "about": {
+    "title": "Über unser Unternehmen",
+    "history": "Wir sind seit 1990 ein weltweit führendes Unternehmen in der Innovation."
+  },
+  "contact": {
+    "phone": "+49 123-456-789",
+    "address": "Hauptstraße 123, Berlin, Deutschland"
+  },
+  "banner": {
+    "title": "Zeitlich begrenztes Angebot!",
+    "subtitle": "Diese Woche 20 % Rabatt auf alle Produkte."
+  },
+  "datetime": {
+    "format": "DD.MM.YYYY"
+  }
+}

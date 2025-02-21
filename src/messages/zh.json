@@ -1,0 +1,39 @@
+{
+  "product": {
+    "name": "高端耳机",
+    "description": "体验卓越音质，享受我们的高端耳机。",
+    "price": "价格",
+    "inventory": "库存",
+    "outOfStock": "缺货",
+    "recommendedTitle": "推荐产品",
+    "recommended": [
+      {
+        "name": "无线耳机",
+        "description": "小巧强大，带有降噪功能。"
+      },
+      {
+        "name": "蓝牙音箱",
+        "description": "便携式音箱，低音深沉，电池寿命长。"
+      },
+      {
+        "name": "游戏耳机",
+        "description": "专为沉浸式游戏体验设计，音质清晰。"
+      }
+    ]
+  },
+  "about": {
+    "title": "关于我们公司",
+    "history": "自1990年以来，我们一直是全球创新的领导者。"
+  },
+  "contact": {
+    "phone": "+86 123-456-789",
+    "address": "北京市长安街123号"
+  },
+  "banner": {
+    "title": "限时优惠！",
+    "subtitle": "本周所有产品享受20%折扣。"
+  },
+  "datetime": {
+    "format": "YYYY/MM/DD"
+  }
+}

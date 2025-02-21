@@ -1,0 +1,39 @@
+{
+  "product": {
+    "name": "プレミアムヘッドフォン",
+    "description": "最高の音質を体験できるプレミアムヘッドフォン。",
+    "price": "価格",
+    "inventory": "在庫",
+    "outOfStock": "在庫切れ",
+    "recommendedTitle": "おすすめの商品",
+    "recommended": [
+      {
+        "name": "ワイヤレスイヤホン",
+        "description": "コンパクトで高性能、ノイズキャンセリング搭載。"
+      },
+      {
+        "name": "Bluetoothスピーカー",
+        "description": "ポータブルスピーカー、深みのある低音、長時間バッテリー。"
+      },
+      {
+        "name": "ゲーミングヘッドセット",
+        "description": "臨場感あふれるゲーム体験のためのクリアなオーディオ。"
+      }
+    ]
+  },
+  "about": {
+    "title": "当社について",
+    "history": "1990年以来、私たちは革新のグローバルリーダーです。"
+  },
+  "contact": {
+    "phone": "+81 123-456-789",
+    "address": "東京都中央区銀座123番地"
+  },
+  "banner": {
+    "title": "期間限定オファー！",
+    "subtitle": "今週、全商品が20%割引。"
+  },
+  "datetime": {
+    "format": "YYYY/MM/DD"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "product": {
+    "name": "Casque Premium",
+    "description": "Découvrez une qualité sonore supérieure avec notre casque premium.",
+    "price": "Prix",
+    "inventory": "Inventaire",
+    "outOfStock": "En rupture de stock",
+    "recommendedTitle": "Produits Recommandés",
+    "recommended": [
+      {
+        "name": "Écouteurs sans fil",
+        "description": "Compacts et puissants avec réduction de bruit."
+      },
+      {
+        "name": "Enceinte Bluetooth",
+        "description": "Enceinte portable avec des basses profondes et une longue autonomie."
+      },
+      {
+        "name": "Casque Gaming",
+        "description": "Conçu pour une expérience de jeu immersive avec un son clair."
+      }
+    ]
+  },
+  "about": {
+    "title": "À Propos de Notre Entreprise",
+    "history": "Nous sommes un leader mondial de l'innovation depuis 1990."
+  },
+  "contact": {
+    "phone": "+33 123-456-789",
+    "address": "123 Rue Principale, Paris, France"
+  },
+  "banner": {
+    "title": "Offre à durée limitée !",
+    "subtitle": "Obtenez 20 % de réduction sur tous les produits cette semaine."
+  },
+  "datetime": {
+    "format": "DD/MM/YYYY"
+  }
+}

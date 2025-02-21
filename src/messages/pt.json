@@ -1,0 +1,39 @@
+{
+  "product": {
+    "name": "Fones de Ouvido Premium",
+    "description": "Experimente qualidade sonora superior com nossos fones de ouvido premium.",
+    "price": "Preço",
+    "inventory": "Estoque",
+    "outOfStock": "Fora de estoque",
+    "recommendedTitle": "Produtos Recomendados",
+    "recommended": [
+      {
+        "name": "Fones de Ouvido Sem Fio",
+        "description": "Compacto e potente com cancelamento de ruído."
+      },
+      {
+        "name": "Caixa de Som Bluetooth",
+        "description": "Caixa de som portátil com graves profundos e longa duração da bateria."
+      },
+      {
+        "name": "Headset Gamer",
+        "description": "Projetado para uma experiência de jogo imersiva com áudio claro."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre Nossa Empresa",
+    "history": "Somos líderes globais em inovação desde 1990."
+  },
+  "contact": {
+    "phone": "+55 123-456-789",
+    "address": "Rua Principal 123, São Paulo, Brasil"
+  },
+  "banner": {
+    "title": "Oferta por tempo limitado!",
+    "subtitle": "Desconto de 20% em todos os produtos esta semana."
+  },
+  "datetime": {
+    "format": "DD/MM/YYYY"
+  }
+}
