@@ -38,7 +38,7 @@ export const conversionRates = {
   EUR: 0.85,
   GBP: 0.72,
   JPY: 109.67,
-  INR: 73.06,
+  INR: 85,
   AUD: 1.31,
   CAD: 1.25,
   CHF: 0.91,
