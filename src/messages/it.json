@@ -1,40 +1,55 @@
 {
-    "product": {
-      "name": "Cuffie Premium",
-      "description": "Scopri una qualità audio superiore con le nostre cuffie premium.",
-      "price": "Prezzo",
-      "inventory": "Inventario",
-      "outOfStock": "Esaurito",
-      "recommendedTitle": "Prodotti Consigliati",
-      "recommended": [
-        {
-          "name": "Auricolari Wireless",
-          "description": "Compatti e potenti con cancellazione del rumore."
-        },
-        {
-          "name": "Altoparlante Bluetooth",
-          "description": "Altoparlante portatile con bassi profondi e lunga durata della batteria."
-        },
-        {
-          "name": "Cuffie da Gaming",
-          "description": "Progettate per un'esperienza di gioco immersiva con audio chiaro."
-        }
-      ]
-    },
-    "about": {
-      "title": "Chi Siamo",
-      "history": "Dal 1990 siamo leader globali nell'innovazione."
-    },
-    "contact": {
-      "phone": "+39 123-456-7890",
-      "address": "123 Via Principale, Roma, Italia"
-    },
-    "banner": {
-      "title": "Offerta a Tempo Limitato!",
-      "subtitle": "Ottieni uno sconto del 20% su tutti i prodotti questa settimana."
-    },
-    "datetime": {
-      "format": "DD/MM/YYYY"
-    }
+  "navbar": {
+    "home": "CMS Multilingue",
+    "about": "Chi Siamo",
+    "contact": "Contatti"
+  },
+  "product": {
+    "name": "Cuffie Premium",
+    "description": "Sperimenta una qualità del suono superiore con le nostre cuffie premium.",
+    "price": "Prezzo",
+    "inventory": "Inventario",
+    "outOfStock": "Esaurito",
+    "recommendedTitle": "Prodotti Consigliati",
+    "recommended": [
+      {
+        "name": "Auricolari Wireless",
+        "description": "Compatti e potenti con cancellazione del rumore."
+      },
+      {
+        "name": "Altoparlante Bluetooth",
+        "description": "Altoparlante portatile con bassi profondi e lunga durata della batteria."
+      },
+      {
+        "name": "Cuffie da Gaming",
+        "description": "Progettate per un’esperienza di gioco immersiva con audio chiaro."
+      }
+    ]
+  },
+  "about": {
+    "title": "La Nostra Azienda",
+    "history": "Fondata nel 1990, la nostra azienda è nata come una piccola impresa con una visione audace: rivoluzionare l’industria attraverso innovazione, eccellenza e soluzioni incentrate sul cliente. Nel corso dei decenni, ci siamo espansi a livello globale, stabilendo una solida presenza in diversi mercati e aprendo la strada a tecnologie all’avanguardia.",
+    "founder1": { "title": "Nome Fondatore 1", "name": "Tom" },
+    "founder2": { "title": "Nome Fondatore 2", "name": "Jerry" }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "description": "Non esitare a contattarci per qualsiasi domanda o feedback.",
+    "call": "Chiamaci",
+    "Location": "Posizione",
+    "phone": "+1 234-567-890",
+    "address": "123 Main Street, New York, USA",
+    "placeholderName": "Inserisci il tuo messaggio",
+    "placeholderEmail": "Inserisci la tua email",
+    "placeholderMessage": "Inserisci il tuo messaggio",
+    "submitButton": "Invia"
+  },
+  "banner": {
+    "name": "Benvenuto su CMS Multilingue",
+    "title": "Offerta a Tempo Limitato!",
+    "subtitle": "Ottieni uno sconto del 20% su tutti i prodotti questa settimana."
+  },
+  "datetime": {
+    "format": "DD/MM/YYYY"
   }
-  
+}

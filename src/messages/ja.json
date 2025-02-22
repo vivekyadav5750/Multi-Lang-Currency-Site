@@ -1,37 +1,53 @@
 {
+  "navbar": {
+    "home": "多言語CMS",
+    "about": "会社概要",
+    "contact": "お問い合わせ"
+  },
   "product": {
     "name": "プレミアムヘッドフォン",
-    "description": "最高の音質を体験できるプレミアムヘッドフォン。",
+    "description": "プレミアムヘッドフォンで優れた音質を体験してください。",
     "price": "価格",
     "inventory": "在庫",
     "outOfStock": "在庫切れ",
-    "recommendedTitle": "おすすめの商品",
+    "recommendedTitle": "おすすめ製品",
     "recommended": [
       {
-        "name": "ワイヤレスイヤホン",
-        "description": "コンパクトで高性能、ノイズキャンセリング搭載。"
+        "name": "ワイヤレスイヤフォン",
+        "description": "ノイズキャンセリング付きのコンパクトで強力な製品。"
       },
       {
         "name": "Bluetoothスピーカー",
-        "description": "ポータブルスピーカー、深みのある低音、長時間バッテリー。"
+        "description": "長時間バッテリーと深みのある低音を備えたポータブルスピーカー。"
       },
       {
         "name": "ゲーミングヘッドセット",
-        "description": "臨場感あふれるゲーム体験のためのクリアなオーディオ。"
+        "description": "クリアな音質で没入型のゲーム体験のために設計。"
       }
     ]
   },
   "about": {
     "title": "当社について",
-    "history": "1990年以来、私たちは革新のグローバルリーダーです。"
+    "history": "1990年に設立された当社は、イノベーション、優秀性、顧客中心のソリューションを通じて業界に革命を起こすという大胆なビジョンを持って小さなベンチャーとしてスタートしました。数十年にわたり、グローバルに展開し、複数の市場で強力な存在感を確立し、最先端技術を牽引してきました。",
+    "founder1": { "title": "創業者名1", "name": "トム" },
+    "founder2": { "title": "創業者名2", "name": "ジェリー" }
   },
   "contact": {
-    "phone": "+81 123-456-789",
-    "address": "東京都中央区銀座123番地"
+    "title": "お問い合わせ",
+    "description": "ご質問やフィードバックがございましたら、お気軽にご連絡ください。",
+    "call": "お電話ください",
+    "Location": "所在地",
+    "phone": "+1 234-567-890",
+    "address": "123 メイン通り、ニューヨーク、アメリカ",
+    "placeholderName": "メッセージを入力",
+    "placeholderEmail": "メールを入力",
+    "placeholderMessage": "メッセージを入力",
+    "submitButton": "送信"
   },
   "banner": {
+    "name": "多言語CMSへようこそ",
     "title": "期間限定オファー！",
-    "subtitle": "今週、全商品が20%割引。"
+    "subtitle": "今週、全商品が20%オフ。"
   },
   "datetime": {
     "format": "YYYY/MM/DD"

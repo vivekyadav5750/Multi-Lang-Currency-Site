@@ -1,4 +1,9 @@
 {
+  "navbar": {
+    "home": "Multi-Lang CMS",
+    "about": "About",
+    "contact": "Contact"
+  },
   "product": {
     "name": "Premium Headphones",
     "description": "Experience superior sound quality with our premium headphones.",
@@ -23,13 +28,30 @@
   },
   "about": {
     "title": "About Our Company",
-    "history": "We have been a global leader in innovation since 1990."
+    "history": "Founded in 1990, our company started as a small venture with a bold vision: to revolutionize the industry through innovation, excellence, and customer-centric solutions. Over the decades, we have expanded globally, establishing a strong presence in multiple markets and pioneering cutting-edge technologies. Our journey has been marked by continuous growth, strategic partnerships, and a relentless commitment to quality. From launching groundbreaking products to embracing sustainable practices, we have consistently adapted to changing trends while staying true to our core values of integrity, innovation, and excellence. Today, we stand as a trusted industry leader, dedicated to shaping the future and empowering businesses worldwide.",
+    "founder1": {
+      "title": "Founder Name 1",
+      "name": "Tom"
+    },
+    "founder2": {
+      "title": "Founder Name 2",
+      "name": "Jerry"
+    }
   },
   "contact": {
+    "title": "Contact Us",
+    "description": "Feel Free to reach out to us for any queries or feedback.",
+    "call": "Call Us",
+    "Location": "Location",
     "phone": "+1 234-567-890",
-    "address": "123 Main Street, New York, USA"
+    "address": "123 Main Street, New York, USA",
+    "placeholderName": "Enter your message",
+    "placeholderEmail": "Enter your email",
+    "placeholderMessage": "Enter your message",
+    "submitButton": "Submit"
   },
   "banner": {
+    "name": "Welcome to Multi-Lang CMS",
     "title": "Limited-Time Offer!",
     "subtitle": "Get 20% off on all products this week."
   },

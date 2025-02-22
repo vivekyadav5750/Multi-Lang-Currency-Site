@@ -1,10 +1,15 @@
 {
+  "navbar": {
+    "home": "Mehrsprachiges CMS",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
   "product": {
     "name": "Premium-Kopfhörer",
-    "description": "Erleben Sie überlegene Klangqualität mit unseren Premium-Kopfhörern.",
+    "description": "Erleben Sie überragende Klangqualität mit unseren Premium-Kopfhörern.",
     "price": "Preis",
     "inventory": "Lagerbestand",
-    "outOfStock": "Nicht auf Lager",
+    "outOfStock": "Ausverkauft",
     "recommendedTitle": "Empfohlene Produkte",
     "recommended": [
       {
@@ -17,21 +22,32 @@
       },
       {
         "name": "Gaming-Headset",
-        "description": "Entwickelt für ein immersives Spielerlebnis mit klarem Sound."
+        "description": "Entwickelt für ein immersives Spielerlebnis mit klarem Klang."
       }
     ]
   },
   "about": {
     "title": "Über unser Unternehmen",
-    "history": "Wir sind seit 1990 ein weltweit führendes Unternehmen in der Innovation."
+    "history": "Gegründet im Jahr 1990, begann unser Unternehmen als kleines Unternehmen mit einer kühnen Vision: die Branche durch Innovation, Exzellenz und kundenorientierte Lösungen zu revolutionieren. Über Jahrzehnte hinweg haben wir uns weltweit ausgebreitet, eine starke Präsenz in mehreren Märkten etabliert und bahnbrechende Technologien vorangetrieben.",
+    "founder1": { "title": "Gründername 1", "name": "Tom" },
+    "founder2": { "title": "Gründername 2", "name": "Jerry" }
   },
   "contact": {
-    "phone": "+49 123-456-789",
-    "address": "Hauptstraße 123, Berlin, Deutschland"
+    "title": "Kontaktieren Sie uns",
+    "description": "Zögern Sie nicht, uns bei Fragen oder Feedback zu kontaktieren.",
+    "call": "Rufen Sie uns an",
+    "Location": "Standort",
+    "phone": "+1 234-567-890",
+    "address": "123 Hauptstraße, New York, USA",
+    "placeholderName": "Geben Sie Ihre Nachricht ein",
+    "placeholderEmail": "Geben Sie Ihre E-Mail ein",
+    "placeholderMessage": "Geben Sie Ihre Nachricht ein",
+    "submitButton": "Absenden"
   },
   "banner": {
+    "name": "Willkommen bei Mehrsprachiges CMS",
     "title": "Zeitlich begrenztes Angebot!",
-    "subtitle": "Diese Woche 20 % Rabatt auf alle Produkte."
+    "subtitle": "Erhalten Sie 20% Rabatt auf alle Produkte diese Woche."
   },
   "datetime": {
     "format": "DD.MM.YYYY"

@@ -1,35 +1,51 @@
 {
+  "navbar": {
+    "home": "多语言CMS",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
   "product": {
     "name": "高端耳机",
-    "description": "体验卓越音质，享受我们的高端耳机。",
+    "description": "使用我们高端耳机体验卓越的音质。",
     "price": "价格",
     "inventory": "库存",
     "outOfStock": "缺货",
     "recommendedTitle": "推荐产品",
     "recommended": [
       {
-        "name": "无线耳机",
-        "description": "小巧强大，带有降噪功能。"
+        "name": "无线耳塞",
+        "description": "带有降噪功能的紧凑而强大的产品。"
       },
       {
         "name": "蓝牙音箱",
-        "description": "便携式音箱，低音深沉，电池寿命长。"
+        "description": "便携式音箱，拥有深沉的低音和长续航电池。"
       },
       {
         "name": "游戏耳机",
-        "description": "专为沉浸式游戏体验设计，音质清晰。"
+        "description": "为沉浸式游戏体验设计，音质清晰。"
       }
     ]
   },
   "about": {
-    "title": "关于我们公司",
-    "history": "自1990年以来，我们一直是全球创新的领导者。"
+    "title": "关于我们的公司",
+    "history": "我们的公司成立于1990年，起初是一家小型企业，怀揣一个大胆的愿景：通过创新、卓越和以客户为中心的解决方案改变行业。几十年来，我们在全球范围内扩展，在多个市场建立了强大的影响力，并引领了尖端技术的发展。",
+    "founder1": { "title": "创始人姓名1", "name": "汤姆" },
+    "founder2": { "title": "创始人姓名2", "name": "杰里" }
   },
   "contact": {
-    "phone": "+86 123-456-789",
-    "address": "北京市长安街123号"
+    "title": "联系我们",
+    "description": "如有任何疑问或反馈，请随时与我们联系。",
+    "call": "给我们打电话",
+    "Location": "位置",
+    "phone": "+1 234-567-890",
+    "address": "美国纽约主街123号",
+    "placeholderName": "输入您的消息",
+    "placeholderEmail": "输入您的邮箱",
+    "placeholderMessage": "输入您的消息",
+    "submitButton": "提交"
   },
   "banner": {
+    "name": "欢迎体验多语言CMS",
     "title": "限时优惠！",
     "subtitle": "本周所有产品享受20%折扣。"
   },

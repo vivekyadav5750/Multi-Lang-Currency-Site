@@ -1,40 +1,55 @@
 {
-    "product": {
-      "name": "프리미엄 헤드폰",
-      "description": "프리미엄 헤드폰으로 최고의 사운드 품질을 경험하세요.",
-      "price": "가격",
-      "inventory": "재고",
-      "outOfStock": "품절",
-      "recommendedTitle": "추천 제품",
-      "recommended": [
-        {
-          "name": "무선 이어버드",
-          "description": "소음 제거 기능이 있는 컴팩트하고 강력한 이어버드."
-        },
-        {
-          "name": "블루투스 스피커",
-          "description": "깊은 베이스와 긴 배터리 수명을 갖춘 휴대용 스피커."
-        },
-        {
-          "name": "게이밍 헤드셋",
-          "description": "선명한 오디오로 몰입감 있는 게임 경험을 위한 디자인."
-        }
-      ]
-    },
-    "about": {
-      "title": "회사 소개",
-      "history": "우리는 1990년부터 혁신의 글로벌 리더입니다."
-    },
-    "contact": {
-      "phone": "+82 123-456-7890",
-      "address": "123 메인 스트리트, 서울, 대한민국"
-    },
-    "banner": {
-      "title": "한정 기간 할인!",
-      "subtitle": "이번 주 모든 제품 20% 할인 혜택을 누리세요."
-    },
-    "datetime": {
-      "format": "YYYY.MM.DD"
-    }
+  "navbar": {
+    "home": "다국어 CMS",
+    "about": "회사 소개",
+    "contact": "문의하기"
+  },
+  "product": {
+    "name": "프리미엄 헤드폰",
+    "description": "프리미엄 헤드폰으로 뛰어난 음질을 경험하세요.",
+    "price": "가격",
+    "inventory": "재고",
+    "outOfStock": "품절",
+    "recommendedTitle": "추천 제품",
+    "recommended": [
+      {
+        "name": "무선 이어폰",
+        "description": "노이즈 캔슬링이 가능한 작고 강력한 제품."
+      },
+      {
+        "name": "블루투스 스피커",
+        "description": "긴 배터리 수명과 깊은 베이스를 갖춘 휴대용 스피커."
+      },
+      {
+        "name": "게이밍 헤드셋",
+        "description": "선명한 오디오로 몰입형 게임 경험을 위해 설계됨."
+      }
+    ]
+  },
+  "about": {
+    "title": "회사 소개",
+    "history": "1990년에 설립된 저희 회사는 혁신, 우수성, 고객 중심 솔루션을 통해 산업을 혁신하겠다는 대담한 비전으로 작은 벤처로 시작했습니다. 수십 년 동안 전 세계적으로 확장하며 여러 시장에서 강력한 입지를 구축하고 최첨단 기술을 개척해 왔습니다.",
+    "founder1": { "title": "창립자 이름 1", "name": "톰" },
+    "founder2": { "title": "창립자 이름 2", "name": "제리" }
+  },
+  "contact": {
+    "title": "문의하기",
+    "description": "궁금한 점이나 피드백이 있으면 언제든지 연락 주세요.",
+    "call": "전화하기",
+    "Location": "위치",
+    "phone": "+1 234-567-890",
+    "address": "123 메인 스트리트, 뉴욕, 미국",
+    "placeholderName": "메시지를 입력하세요",
+    "placeholderEmail": "이메일을 입력하세요",
+    "placeholderMessage": "메시지를 입력하세요",
+    "submitButton": "제출"
+  },
+  "banner": {
+    "name": "다국어 CMS에 오신 것을 환영합니다",
+    "title": "한정 시간 할인!",
+    "subtitle": "이번 주 모든 제품 20% 할인."
+  },
+  "datetime": {
+    "format": "YYYY/MM/DD"
   }
-  
+}

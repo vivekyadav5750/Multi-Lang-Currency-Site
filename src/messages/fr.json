@@ -1,19 +1,24 @@
 {
+  "navbar": {
+    "home": "CMS Multilingue",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
   "product": {
     "name": "Casque Premium",
-    "description": "Découvrez une qualité sonore supérieure avec notre casque premium.",
+    "description": "Découvrez une qualité sonore exceptionnelle avec notre casque premium.",
     "price": "Prix",
     "inventory": "Inventaire",
     "outOfStock": "En rupture de stock",
     "recommendedTitle": "Produits Recommandés",
     "recommended": [
       {
-        "name": "Écouteurs sans fil",
-        "description": "Compacts et puissants avec réduction de bruit."
+        "name": "Écouteurs Sans Fil",
+        "description": "Compacts et puissants avec annulation de bruit."
       },
       {
-        "name": "Enceinte Bluetooth",
-        "description": "Enceinte portable avec des basses profondes et une longue autonomie."
+        "name": "Haut-Parleur Bluetooth",
+        "description": "Haut-parleur portable avec des basses profondes et une longue autonomie."
       },
       {
         "name": "Casque Gaming",
@@ -23,14 +28,25 @@
   },
   "about": {
     "title": "À Propos de Notre Entreprise",
-    "history": "Nous sommes un leader mondial de l'innovation depuis 1990."
+    "history": "Fondée en 1990, notre entreprise a débuté comme une petite aventure avec une vision audacieuse : révolutionner l’industrie grâce à l’innovation, l’excellence et des solutions centrées sur le client. Au fil des décennies, nous nous sommes développés à l’échelle mondiale, établissant une forte présence sur de multiples marchés et ouvrant la voie à des technologies de pointe.",
+    "founder1": { "title": "Nom du Fondateur 1", "name": "Tom" },
+    "founder2": { "title": "Nom du Fondateur 2", "name": "Jerry" }
   },
   "contact": {
-    "phone": "+33 123-456-789",
-    "address": "123 Rue Principale, Paris, France"
+    "title": "Contactez-Nous",
+    "description": "N’hésitez pas à nous contacter pour toute question ou retour d’information.",
+    "call": "Appelez-nous",
+    "Location": "Emplacement",
+    "phone": "+1 234-567-890",
+    "address": "123 Rue Principale, New York, États-Unis",
+    "placeholderName": "Entrez votre message",
+    "placeholderEmail": "Entrez votre email",
+    "placeholderMessage": "Entrez votre message",
+    "submitButton": "Envoyer"
   },
   "banner": {
-    "title": "Offre à durée limitée !",
+    "name": "Bienvenue sur CMS Multilingue",
+    "title": "Offre à Durée Limitée !",
     "subtitle": "Obtenez 20 % de réduction sur tous les produits cette semaine."
   },
   "datetime": {

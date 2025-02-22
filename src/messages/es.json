@@ -1,4 +1,9 @@
 {
+  "navbar": {
+    "home": "CMS Multilingüe",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
   "product": {
     "name": "Auriculares Premium",
     "description": "Experimenta una calidad de sonido superior con nuestros auriculares premium.",
@@ -16,21 +21,32 @@
         "description": "Altavoz portátil con graves profundos y batería de larga duración."
       },
       {
-        "name": "Auriculares para Gaming",
+        "name": "Auriculares para Juegos",
         "description": "Diseñados para una experiencia de juego inmersiva con audio claro."
       }
     ]
   },
   "about": {
     "title": "Sobre Nuestra Empresa",
-    "history": "Hemos sido un líder global en innovación desde 1990."
+    "history": "Fundada en 1990, nuestra empresa comenzó como una pequeña iniciativa con una visión audaz: revolucionar la industria a través de la innovación, la excelencia y soluciones centradas en el cliente. Durante décadas, nos hemos expandido globalmente, estableciendo una fuerte presencia en múltiples mercados y liderando tecnologías de vanguardia.",
+    "founder1": { "title": "Nombre del Fundador 1", "name": "Tom" },
+    "founder2": { "title": "Nombre del Fundador 2", "name": "Jerry" }
   },
   "contact": {
-    "phone": "+34 123-456-789",
-    "address": "Calle Mayor 123, Madrid, España"
+    "title": "Contáctanos",
+    "description": "No dudes en ponerte en contacto con nosotros para cualquier consulta o comentario.",
+    "call": "Llámanos",
+    "Location": "Ubicación",
+    "phone": "+1 234-567-890",
+    "address": "123 Calle Principal, Nueva York, EE. UU.",
+    "placeholderName": "Ingresa tu mensaje",
+    "placeholderEmail": "Ingresa tu correo",
+    "placeholderMessage": "Ingresa tu mensaje",
+    "submitButton": "Enviar"
   },
   "banner": {
-    "title": "¡Oferta por tiempo limitado!",
+    "name": "Bienvenido a CMS Multilingüe",
+    "title": "¡Oferta por Tiempo Limitado!",
     "subtitle": "Obtén un 20% de descuento en todos los productos esta semana."
   },
   "datetime": {
