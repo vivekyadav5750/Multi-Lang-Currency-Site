@@ -59,6 +59,10 @@ const Navbar = () => {
     setSelectedLang(lang);
     setSelectedCurrency(currency as CurrencyType);
     dispatch(setCurrency(currency as CurrencyType));
+    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, "");
+    const newPath = `/${lang}${pathWithoutLocale || "/"}`;
+
+    router.push(newPath);
   }, []);
 
   const changeLanguage = (newLang: string) => {
