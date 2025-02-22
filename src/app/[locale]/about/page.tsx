@@ -3,19 +3,17 @@ import { Twitter, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function AboutUs() {
+  const t = useTranslations("about");
   return (
     <div className="bg-gray-50 py-12 px-5 sm:px-10 lg:px-20 ">
       <div className="max-w-7xl mx-auto text-center">
         {/* About Us Heading */}
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">About Us</h2>
+        <h2 className="text-4xl font-bold text-gray-900 mb-6">{t("title")}</h2>
         <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto mb-10">
-          Ragi Mart was founded by two friends with a shared passion for
-          healthy, sustainable, and natural food products. We believe in the
-          power of wholesome, nutritious ingredients that are not only good for
-          you but also for the planet. Our mission is to deliver high-quality
-          ragi-based products that promote a healthy lifestyle.
+          {t("history")}
         </p>
 
         {/* Founders' Section */}
@@ -31,9 +29,9 @@ export default function AboutUs() {
             />
 
             <h3 className="text-xl font-semibold text-gray-900">
-              Founder Name 1
+              {t("founder1.title")}
             </h3>
-            <p className="text-gray-600">Co-Founder & Product Lead</p>
+            <p className="text-gray-600"> {t("founder1.name")}</p>
           </div>
 
           {/* Founder 2 */}
@@ -46,9 +44,9 @@ export default function AboutUs() {
               className="w-40 h-40 mx-auto rounded-full mb-4 shadow-lg"
             />
             <h3 className="text-xl font-semibold text-gray-900">
-              Founder Name 2
+              {t("founder2.title")}
             </h3>
-            <p className="text-gray-600">Co-Founder & Marketing Lead</p>
+            <p className="text-gray-600"> {t("founder2.name")}</p>
           </div>
         </div>
 

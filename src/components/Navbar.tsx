@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { ModeToggle } from "./theme-toggle";
 import { useAppDispatch } from "@/redux/hook";
@@ -42,12 +42,14 @@ const currencies: CurrencyType[] = [
 ];
 
 const Navbar = () => {
+  const t = useTranslations("navbar");
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState("en");
   const [selectedCurrency, setSelectedCurrency] = useState<CurrencyType>("USD");
 
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -57,13 +59,17 @@ const Navbar = () => {
     setSelectedLang(lang);
     setSelectedCurrency(currency as CurrencyType);
     dispatch(setCurrency(currency as CurrencyType));
-    router.push(`/${lang}`);
   }, []);
 
   const changeLanguage = (newLang: string) => {
     setSelectedLang(newLang);
     Cookies.set("language", newLang, { expires: 365 });
-    router.push(`/${newLang}`);
+
+    // Extract the current path excluding the locale
+    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, "");
+    const newPath = `/${newLang}${pathWithoutLocale || "/"}`;
+
+    router.push(newPath);
   };
 
   const changeCurrency = (newCurrency: CurrencyType) => {
@@ -76,11 +82,11 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white p-4 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href={`/${locale}`} className="text-2xl font-bold text-white">
-          Multi-Lang CMS
+          {t("home")}
         </Link>
 
         <div className="hidden md:flex space-x-6 items-center">
-          <NavLinks locale={locale} />
+          <NavLinks locale={locale} about={t("about")} contact={t("contact")} />
           <LanguageSelector
             selectedLang={selectedLang}
             onChange={changeLanguage}
@@ -99,16 +105,19 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className="md:hidden flex flex-col bg-gray-800 p-4 mt-2 space-y-3">
-          <NavLinks locale={locale} isMobile />
+          <NavLinks
+            locale={locale}
+            isMobile
+            about={t("about")}
+            contact={t("contact")}
+          />
           <LanguageSelector
             selectedLang={selectedLang}
             onChange={changeLanguage}
-            isMobile
           />
           <CurrencySelector
             selectedCurrency={selectedCurrency}
             onChange={changeCurrency}
-            isMobile
           />
           <ModeToggle />
         </div>
@@ -121,23 +130,27 @@ export default Navbar;
 
 const NavLinks = ({
   locale,
-  isMobile = false
+  isMobile = false,
+  about,
+  contact
 }: {
   locale: string;
   isMobile?: boolean;
+  about: string;
+  contact: string;
 }) => (
   <div className={`flex ${isMobile ? "flex-col space-y-3" : "space-x-6"}`}>
     <Link
       href={`/${locale}/about`}
       className="hover:text-gray-400 text-xl p-2 transition duration-200"
     >
-      About
+      {about}
     </Link>
     <Link
       href={`/${locale}/contact`}
       className="hover:text-gray-400 text-xl p-2 transition duration-200"
     >
-      Contact
+      {contact}
     </Link>
   </div>
 );
@@ -148,12 +161,11 @@ const LanguageSelector = ({
 }: {
   selectedLang: string;
   onChange: (lang: string) => void;
-  isMobile?: boolean;
 }) => (
   <select
     value={selectedLang}
     onChange={(e) => onChange(e.target.value)}
-    className={` dark:bg-gray-900 dark:text-white bg-white text-gray-900 p-2 rounded border-white border-2`}
+    className="dark:bg-gray-900 dark:text-white bg-white text-gray-900 p-2 rounded border-white border-2"
   >
     {languages.map((lang) => (
       <option key={lang.code} value={lang.code}>
@@ -169,12 +181,11 @@ const CurrencySelector = ({
 }: {
   selectedCurrency: string;
   onChange: (currency: CurrencyType) => void;
-  isMobile?: boolean;
 }) => (
   <select
     value={selectedCurrency}
     onChange={(e) => onChange(e.target.value as CurrencyType)}
-    className={` dark:bg-gray-900 dark:text-white bg-white text-gray-900 p-2 rounded border-white border-2`}
+    className="dark:bg-gray-900 dark:text-white bg-white text-gray-900 p-2 rounded border-white border-2"
   >
     {currencies.map((cur) => (
       <option key={cur} value={cur}>
