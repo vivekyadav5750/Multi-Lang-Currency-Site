@@ -1,6 +1,5 @@
 "use client";
 
-import LocalizedContent from "@/components/LocalizedContent";
 import { useAppSelector } from "@/redux/hook";
 import { formatCurrency } from "@/utils/currencySymbols";
 import { useTranslations } from "next-intl";
@@ -125,7 +124,6 @@ export default function ProductPage() {
         </div>
       </div>
       {/* Localized Content */}
-      <LocalizedContent />
     </>
   );
 }

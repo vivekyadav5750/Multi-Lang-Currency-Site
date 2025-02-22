@@ -9,6 +9,7 @@ import { useAppDispatch } from "@/redux/hook";
 import { setCurrency } from "@/redux/currencySlice";
 import { CurrencyType } from "@/types";
 import Cookies from "js-cookie";
+import Link from "next/link";
 
 const languages = [
   { code: "en", label: "English" },
@@ -41,27 +42,21 @@ const currencies: CurrencyType[] = [
 ];
 
 const Navbar = () => {
-  // const { currency } = useAppSelector((state) => state.currency);
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState("en");
   const [selectedCurrency, setSelectedCurrency] = useState<CurrencyType>("USD");
-  
+
   const locale = useLocale();
   const router = useRouter();
   const dispatch = useAppDispatch();
 
-  // Read cookies only once
   useEffect(() => {
     const lang = Cookies.get("language") || locale;
     const currency = Cookies.get("currency") || "USD";
 
     setSelectedLang(lang);
     setSelectedCurrency(currency as CurrencyType);
-
-    // Store in Redux state
     dispatch(setCurrency(currency as CurrencyType));
-
-    // Redirect to correct locale
     router.push(`/${lang}`);
   }, []);
 
@@ -78,28 +73,43 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-900 text-white p-4 shadow-md">
+    <nav className="bg-gray-900 text-white p-4 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Multi-Lang CMS</h1>
+        <Link href={`/${locale}`} className="text-2xl font-bold text-white">
+          Multi-Lang CMS
+        </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-4 items-center">
-          <LanguageSelector selectedLang={selectedLang} onChange={changeLanguage} />
-          <CurrencySelector selectedCurrency={selectedCurrency} onChange={changeCurrency} />
+        <div className="hidden md:flex space-x-6 items-center">
+          <NavLinks locale={locale} />
+          <LanguageSelector
+            selectedLang={selectedLang}
+            onChange={changeLanguage}
+          />
+          <CurrencySelector
+            selectedCurrency={selectedCurrency}
+            onChange={changeCurrency}
+          />
           <ModeToggle />
         </div>
 
-        {/* Mobile Menu Button */}
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col bg-gray-800 p-4 mt-2 space-y-3">
-          <LanguageSelector selectedLang={selectedLang} onChange={changeLanguage} isMobile />
-          <CurrencySelector selectedCurrency={selectedCurrency} onChange={changeCurrency} isMobile />
+          <NavLinks locale={locale} isMobile />
+          <LanguageSelector
+            selectedLang={selectedLang}
+            onChange={changeLanguage}
+            isMobile
+          />
+          <CurrencySelector
+            selectedCurrency={selectedCurrency}
+            onChange={changeCurrency}
+            isMobile
+          />
           <ModeToggle />
         </div>
       )}
@@ -109,11 +119,32 @@ const Navbar = () => {
 
 export default Navbar;
 
-/* --- Language Selector Component --- */
+const NavLinks = ({
+  locale,
+  isMobile = false
+}: {
+  locale: string;
+  isMobile?: boolean;
+}) => (
+  <div className={`flex ${isMobile ? "flex-col space-y-3" : "space-x-6"}`}>
+    <Link
+      href={`/${locale}/about`}
+      className="hover:text-gray-400 text-xl p-2 transition duration-200"
+    >
+      About
+    </Link>
+    <Link
+      href={`/${locale}/contact`}
+      className="hover:text-gray-400 text-xl p-2 transition duration-200"
+    >
+      Contact
+    </Link>
+  </div>
+);
+
 const LanguageSelector = ({
   selectedLang,
-  onChange,
-  isMobile = false
+  onChange
 }: {
   selectedLang: string;
   onChange: (lang: string) => void;
@@ -122,7 +153,7 @@ const LanguageSelector = ({
   <select
     value={selectedLang}
     onChange={(e) => onChange(e.target.value)}
-    className={`bg-gray-${isMobile ? "700" : "800"} text-white p-2 rounded`}
+    className={` dark:bg-gray-900 dark:text-white bg-white text-gray-900 p-2 rounded border-white border-2`}
   >
     {languages.map((lang) => (
       <option key={lang.code} value={lang.code}>
@@ -132,11 +163,9 @@ const LanguageSelector = ({
   </select>
 );
 
-/* --- Currency Selector Component --- */
 const CurrencySelector = ({
   selectedCurrency,
-  onChange,
-  isMobile = false
+  onChange
 }: {
   selectedCurrency: string;
   onChange: (currency: CurrencyType) => void;
@@ -145,7 +174,7 @@ const CurrencySelector = ({
   <select
     value={selectedCurrency}
     onChange={(e) => onChange(e.target.value as CurrencyType)}
-    className={`bg-gray-${isMobile ? "700" : "800"} text-white p-2 rounded`}
+    className={` dark:bg-gray-900 dark:text-white bg-white text-gray-900 p-2 rounded border-white border-2`}
   >
     {currencies.map((cur) => (
       <option key={cur} value={cur}>
