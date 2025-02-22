@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "locahost:3000";
+  const baseUrl = "https://multi-lang-currency-site.vercel.app/";
   const currentDate = new Date().toISOString().split("T")[0];
 
   // Static pages

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /_next/
-Sitemap: https://localhost:3000.com/sitemap.xml
+Sitemap: https://multi-lang-currency-site.vercel.app/sitemap.xml

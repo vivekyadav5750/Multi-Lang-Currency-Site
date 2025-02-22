@@ -28,7 +28,15 @@ export async function generateMetadata({
   return {
     title: `Multi-Lang CMS | ${locale.toUpperCase()}`,
     description: "A multilingual CMS platform for global businesses.",
-    keywords: "multilingual, CMS, global"
+    keywords: "multilingual, CMS, global",
+    openGraph: {
+      title: `Multi-Lang CMS | ${locale.toUpperCase()}`,
+      description: "A multilingual CMS platform for global businesses.",
+      type: "website"
+    },
+    alternates: {
+      canonical: "https://multi-lang-currency-site.vercel.app/"
+    }
   };
 }
 
