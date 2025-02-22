@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
-import ProductTemplate from "@/components/ProductTemplate";
+import dynamic from "next/dynamic";
+const ProductTemplate = dynamic(() => import("@/components/ProductTemplate"));
 
 export default function ProductPage() {
   return (

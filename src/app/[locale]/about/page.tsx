@@ -1,10 +1,22 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Twitter, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { cn } from "@/lib/utils"; // Assuming cn is exported from a utils file
+import { cn } from "@/lib/utils";
+import { Metadata } from "next";
+
+// Lazy load the FoundersSection component
+const FoundersSection = React.lazy(
+  () => import("@/components/FoundersSection")
+);
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "About Us | Multi-Lang CMS",
+    description: "Learn about our company history and founders."
+  };
+}
 
 export default function AboutUs() {
   const t = useTranslations("about");
@@ -13,7 +25,7 @@ export default function AboutUs() {
     <div
       className={cn(
         "py-12 px-5 sm:px-10 lg:px-20",
-        "bg-gray-50 dark:bg-gray-900" // Light: gray-50, Dark: gray-900
+        "bg-gray-50 dark:bg-gray-900"
       )}
     >
       <div className="max-w-7xl mx-auto text-center">
@@ -21,7 +33,7 @@ export default function AboutUs() {
         <h2
           className={cn(
             "text-4xl font-bold mb-6",
-            "text-gray-900 dark:text-gray-100" // Light: gray-900, Dark: gray-100
+            "text-gray-900 dark:text-gray-100"
           )}
         >
           {t("title")}
@@ -29,64 +41,16 @@ export default function AboutUs() {
         <p
           className={cn(
             "text-lg leading-relaxed max-w-4xl mx-auto mb-10",
-            "text-gray-600 dark:text-gray-300" // Light: gray-600, Dark: gray-300
+            "text-gray-600 dark:text-gray-300"
           )}
         >
           {t("history")}
         </p>
 
-        {/* Founders' Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-16 mb-12">
-          {/* Founder 1 */}
-          <div className="text-center lg:w-1/2 mb-10 lg:mb-0">
-            <Image
-              src="/images/tom.jpg"
-              alt={t("founder1.title")} // Improved alt text for accessibility
-              width={160}
-              height={160}
-              className={cn(
-                "w-40 h-40 mx-auto rounded-full mb-4 shadow-lg",
-                "dark:shadow-gray-700" // Dark mode shadow adjustment
-              )}
-            />
-            <h3
-              className={cn(
-                "text-xl font-semibold",
-                "text-gray-900 dark:text-gray-100"
-              )}
-            >
-              {t("founder1.title")}
-            </h3>
-            <p className={cn("text-gray-600 dark:text-gray-300")}>
-              {t("founder1.name")}
-            </p>
-          </div>
-
-          {/* Founder 2 */}
-          <div className="text-center lg:w-1/2">
-            <Image
-              src="/images/jerry.jpg"
-              alt={t("founder2.title")} // Improved alt text for accessibility
-              width={160}
-              height={160}
-              className={cn(
-                "w-40 h-40 mx-auto rounded-full mb-4 shadow-lg",
-                "dark:shadow-gray-700" // Dark mode shadow adjustment
-              )}
-            />
-            <h3
-              className={cn(
-                "text-xl font-semibold",
-                "text-gray-900 dark:text-gray-100"
-              )}
-            >
-              {t("founder2.title")}
-            </h3>
-            <p className={cn("text-gray-600 dark:text-gray-300")}>
-              {t("founder2.name")}
-            </p>
-          </div>
-        </div>
+        {/* Lazy Founder Section */}
+        <Suspense fallback={<div className="h-16 bg-gray-200 animate-pulse" />}>
+          <FoundersSection />
+        </Suspense>
 
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6">
@@ -94,7 +58,7 @@ export default function AboutUs() {
             variant="ghost"
             className={cn(
               "p-4",
-              "text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300" // Adjusted hover states
+              "text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300"
             )}
             asChild
           >

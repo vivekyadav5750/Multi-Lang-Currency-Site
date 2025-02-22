@@ -13,6 +13,14 @@ import {
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils"; // Assuming cn is exported from a utils file
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Contact Us | Multi-Lang CMS",
+    description: "Get in touch with us for any inquiries or support."
+  };
+}
 
 export default function ContactUs() {
   const t = useTranslations("contact");
